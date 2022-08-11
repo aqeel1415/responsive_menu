@@ -1,0 +1,682 @@
+﻿
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+<link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+<title>HW4</title>
+<style>
+/* ---------------- Aqeel Alfakhr -------- s201236760 ----------------------------*/    
+/*******************************  menu *******************************************/
+.OrgMenu,.OrgMenu ul,.OrgMenu li,.OrgMenu a{
+	padding: 0;
+    margin: 0;
+ 
+}
+
+.OrgMenu a{
+	padding: 0;
+    margin: 0;
+    
+}
+    
+.OrgMenu ul li a{
+	padding: 0;
+    margin: 0;
+  
+}  
+.OrgMenu {	
+    margin-top: 50px;
+    margin-right: 140px;
+	width: 500px;
+
+	
+}
+  
+/* main menu buttons */
+.OrgMenu li {
+	position: relative;
+	list-style: none;
+	float: right;
+	display: block;
+	height: 20px;
+}
+/* main menu buttons proprties */
+.OrgMenu li a {
+    white-space: nowrap;
+	text-transform: uppercase;
+	color: black;
+	display: block;
+	padding: 0 14px;
+	line-height: 29px;
+	text-decoration: none;                        /* romove anchor line */
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 18px;
+    border-bottom: 4px solid orange;
+	transition: color .3s ease-in-out;
+}
+
+.OrgMenu ul { 
+	position: absolute;
+    top: 29px;
+	left: 0;                   /*this is the direction of the droplist*/
+	opacity: 0;
+    border-radius: 15px;
+    
+}
+
+  .OrgMenu  li:hover  a {       
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: orange;               /*bg-c of the main buttons*/
+ 
+  }
+  
+    .OrgMenu  ul li:hover  a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;                      /*lighting color of the main buttons*/
+
+  }
+  
+
+.OrgMenu li:hover > ul { 
+    opacity: 1;
+  }
+
+.OrgMenu li:hover > ul a { 
+    border-radius: 0px;
+    background-color: black;             /*bg-c of the list*/
+  }
+
+.OrgMenu ul li {
+        z-index: 1;                   /*this is to make the border top line to appear up */
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: all 0.01s ease .1s;
+        
+    }
+  
+
+ .OrgMenu li a:hover{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;                     /*lighting color of the list links*/
+}
+
+.OrgMenu li:hover ul li {
+
+    height: 29px;  
+	padding: 0;
+    
+}
+
+/* droplist properties */
+.OrgMenu ul li a {
+	display: block;
+    color: #808080;                     /*origin color of the list links*/
+    padding: 0px 10px 0px 150px;
+    font-size: 16px;
+    width: 40px;
+	margin: 0;
+}
+
+.OrgMenu ul li:first-child a { border-top: 4px solid orange; }    /*top border of lists*/
+.OrgMenu ul li:last-child a { 
+        border-bottom: none;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+.OrgMenu li:last-child { 
+        padding: 0; 
+        
+    }
+    
+.RedMenu,.RedMenu ul,.RedMenu li,.RedMenu a{
+	padding: 0;
+    margin: 0;
+ 
+}
+
+.RedMenu a{
+	padding: 0;
+    margin: 0;
+    
+}
+    
+.RedMenu ul li a{
+	padding: 0;
+    margin: 0;
+  
+}  
+.RedMenu {	
+    margin-top: 50px;
+    margin-right: 140px;
+	width: 500px;
+
+	
+}
+  
+/* main menu buttons */
+.RedMenu li {
+	position: relative;
+	list-style: none;
+	float: right;
+	display: inline;
+	height: 20px;
+}
+/* main menu buttons proprties */
+.RedMenu li a {
+    white-space: nowrap;
+	text-transform: uppercase;
+	color: black;
+	display: block;
+	padding: 0 14px;
+	line-height: 29px;
+	text-decoration: none;                        /* romove anchor line */
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 18px;
+    border-bottom: 4px solid Red;
+	transition: color .3s ease-in-out;
+}
+
+.RedMenu ul {  
+	position: absolute;
+    top: 29px;
+	right: 0;                    /*this is the direction of the droplist*/
+	opacity: 0;
+    border-radius: 15px;
+    
+}
+
+  .RedMenu  li:hover  a {       
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: Red;               /*bg-c of the main buttons*/
+  }
+  
+    .RedMenu  ul li:hover  a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;                      /*lighting color of the main buttons*/
+
+  }
+  
+
+.RedMenu li:hover > ul { 
+    opacity: 1;
+  }
+
+.RedMenu li:hover > ul a { 
+    border-radius: 0px;
+    background-color: black;             /*bg-c of the list*/
+  }
+
+.RedMenu ul li {
+        z-index: 1;                   /*this is to make the border top line to appear up */
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: all 0.01s ease .1s;
+        
+    }
+  
+
+.RedMenu li a:hover{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;                     /*lighting color of the list links*/
+}
+
+.RedMenu li:hover ul li {
+    height: 29px;  
+	padding: 0;
+    
+}
+
+/* droplist properties */
+.RedMenu ul li a {
+	display: block;
+    color: #808080;                     /*origin color of the list links*/
+    padding: 0px 10px 0px 150px;
+    font-size: 16px;
+    width: 40px;
+	margin: 0;
+}
+
+.RedMenu ul li:first-child a {   border-top: 4px solid red;}    /*top border of lists*/
+.RedMenu ul li:last-child a { 
+        border-bottom: none;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+.RedMenu li:last-child { 
+        padding: 0; 
+        
+    } 
+
+.GreenMenu,.GreenMenu ul,.GreenMenu li,.GreenMenu a{
+	padding: 0;
+    margin: 0;
+ 
+}
+
+.GreenMenu a{
+	padding: 0;
+    margin: 0;
+    
+}
+    
+.GreenMenu ul li a{
+	padding: 0;
+    margin: 0;
+  
+}  
+.GreenMenu {	
+    margin-top: 50px;
+    margin-right: 140px;
+	width: 500px;
+
+	
+}
+  
+/* main menu buttons */
+.GreenMenu li {
+	position: relative;
+	list-style: none;
+	float: right;
+	display: block;
+	height: 20px;
+}
+/* main menu buttons proprties */
+.GreenMenu li a {
+    white-space: nowrap;
+	text-transform: uppercase;
+	color: black;
+	display: block;
+	padding: 0 14px;
+	line-height: 29px;
+	text-decoration: none;                        /* romove anchor line */
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 18px;
+    border-bottom: 4px solid Green;
+	transition: color .3s ease-in-out;
+}
+
+.GreenMenu ul { 
+	position: absolute;
+    top: 29px;
+	right: 0;                /*this is the direction of the droplist*/
+	opacity: 0;
+    border-radius: 15px;
+    
+}
+
+  .GreenMenu  li:hover  a {       
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: Green;               /*bg-c of the main buttons*/
+ 
+  }
+  
+    .GreenMenu  ul li:hover  a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;                      /*lighting color of the main buttons*/
+
+  }
+  
+
+.GreenMenu li:hover > ul { 
+    opacity: 1;
+  }
+
+.GreenMenu li:hover > ul a { 
+    border-radius: 0px;
+    background-color: black;             /*bg-c of the list*/
+  }
+
+.GreenMenu ul li {
+        z-index: 1;                   /*this is to make the border top line to appear up */        
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: all 0.01s ease .1s;
+        
+    }
+  
+
+ .GreenMenu li a:hover{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;                     /*lighting color of the list links*/
+}
+
+.GreenMenu li:hover ul li {
+
+    height: 29px;  
+	padding: 0;
+    
+}
+
+/* droplist properties */
+.GreenMenu ul li a {
+	display: block;
+    color: #808080;                     /*origin color of the list links*/
+    padding: 0px 10px 0px 150px;
+    font-size: 16px;
+    width: 40px;
+	margin: 0;
+}
+
+.GreenMenu ul li:first-child a { border-top: 4px solid Green; }    /*top border of lists*/
+.GreenMenu ul li:last-child a { 
+        border-bottom: none;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+.GreenMenu li:last-child { 
+        padding: 0; 
+        
+    }
+    
+.YellowMenu,.YellowMenu ul,.YellowMenu li,.YellowMenu a{
+	padding: 0;
+    margin: 0;
+ 
+}
+
+.YellowMenu a{
+	padding: 0;
+    margin: 0;
+    
+}
+    
+.YellowMenu ul li a{
+	padding: 0;
+    margin: 0;
+  
+}  
+.YellowMenu {	
+    margin-top: 50px;
+    margin-right: 140px;
+	width: 500px;
+
+	
+}
+  
+/* main menu buttons */
+.YellowMenu li {
+	position: relative;
+	list-style: none;
+	float: right;
+	display: block;
+	height: 20px;
+}
+/* main menu buttons proprties */
+.YellowMenu li a {
+    white-space: nowrap;
+	text-transform: uppercase;
+	color: black;
+	display: block;
+	padding: 0 14px;
+	line-height: 29px;
+	text-decoration: none;                        /* romove anchor line */
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 18px;
+    border-bottom: 4px solid Yellow;
+	transition: color .3s ease-in-out;
+}
+
+.YellowMenu ul { 
+	position: absolute;
+    top: 29px;
+	right: 0;                    /*this is the direction of the droplist*/
+	opacity: 0;
+    border-radius: 15px;
+    
+}
+
+  .YellowMenu  li:hover  a {       
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: Yellow;               /*bg-c of the main buttons*/
+ 
+  }
+  
+    .YellowMenu  ul li:hover  a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;                      /*lighting color of the main buttons*/
+
+  }
+  
+
+.YellowMenu li:hover > ul { 
+    opacity: 1;
+  }
+
+.YellowMenu li:hover > ul a { 
+    border-radius: 0px;
+    background-color: black;             /*bg-c of the list*/
+  }
+
+.YellowMenu ul li {
+        z-index: 1;                   /*this is to make the border top line to appear up */       
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: all 0.01s ease .1s;
+        
+    }
+  
+
+ .YellowMenu li a:hover{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;                     /*lighting color of the list links*/
+}
+
+.YellowMenu li:hover ul li {
+
+    height: 29px;  
+	padding: 0;
+    
+}
+
+/* droplist properties */
+.YellowMenu ul li a {
+	display: block;
+    color: #808080;                     /*origin color of the list links*/
+    padding: 0px 10px 0px 150px;
+    font-size: 16px;
+    width: 40px;
+	margin: 0;
+}
+
+.YellowMenu ul li:first-child a { border-top: 4px solid Yellow; }    /*top border of lists*/
+.YellowMenu ul li:last-child a { 
+        border-bottom: none;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+.YellowMenu li:last-child { 
+        padding: 0; 
+        
+    } 
+
+.GrayMenu,.GrayMenu ul,.GrayMenu li,.GrayMenu a{
+	padding: 0;
+    margin: 0;
+ 
+}
+
+.GrayMenu a{
+	padding: 0;
+    margin: 0;
+    
+}
+    
+.GrayMenu ul li a{
+	padding: 0;
+    margin: 0;
+  
+}  
+.GrayMenu {	
+    margin-top: 50px;
+    margin-right: 140px;
+	width: 500px;
+
+	
+}
+  
+/* main menu buttons */
+.GrayMenu li {
+	position: relative;
+	list-style: none;
+	float: right;
+	display: block;
+	height: 20px;
+}
+/* main menu buttons proprties */
+.GrayMenu li a {
+    white-space: nowrap;
+	text-transform: uppercase;
+	color: black;
+	display: block;
+	padding: 0 14px;
+	line-height: 29px;
+	text-decoration: none;                        /* romove anchor line */
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 18px;
+    border-bottom: 4px solid Gray;
+	transition: color .3s ease-in-out;
+}
+
+.GrayMenu ul { 
+	position: absolute;
+    top: 29px;
+	left: 0;                     /*this is the direction of the droplist*/
+	opacity: 0;
+    border-radius: 15px;
+    
+}
+
+  .GrayMenu  li:hover  a {       
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: Gray;               /*bg-c of the main buttons*/
+ 
+  }
+  
+    .GrayMenu  ul li:hover  a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;                      /*lighting color of the main buttons*/
+
+  }
+  
+
+.GrayMenu li:hover > ul { 
+    opacity: 1;
+  }
+
+.GrayMenu li:hover > ul a { 
+    border-radius: 0px;
+    background-color: black;             /*bg-c of the list*/
+  }
+
+.GrayMenu ul li {
+        
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: all 0.01s ease .1s;
+        
+    }
+  
+
+ .GrayMenu li a:hover{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;                     /*lighting color of the list links*/
+}
+
+.GrayMenu li:hover ul li {
+
+    height: 29px;  
+	padding: 0;
+    
+}
+
+/* droplist properties */
+.GrayMenu ul li a {
+	display: block;
+    color: #808080;                     /*origin color of the list links*/
+    padding: 0px 10px 0px 150px;
+    font-size: 16px;
+    width: 40px;
+	margin: 0;
+}
+
+.GrayMenu ul li:first-child a { border-top: 4px solid Gray; }    /*top border of lists*/
+.GrayMenu ul li:last-child a { 
+        border-bottom: none;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+.GrayMenu li:last-child { 
+        padding: 0; 
+        
+    }
+  
+</style>
+  
+<link href="metro-icons.css" rel="stylesheet">
+  
+</head>
+
+<body style="background-color: white">
+<ul class="YellowMenu" >
+      <li><a href="#"><i class="fa fa-home fa-1x" ></i> الرئيسية</a></li></li></ul> 
+
+
+<ul class="RedMenu" >
+        <li><a href="#"><i class="fa fa-question-circle"  ></i> من نحن</a>         	
+        <ul>
+			<li><a href="#" class="documents">عن الشركة</a></li>
+			<li><a href="#" class="messages">قابل الفريق</a></li>
+		</ul></li></ul>
+
+<ul class="GreenMenu" >
+	<li><a href="#" ><i class="fa fa-th-large" ></i> الخدمات</a>
+		 <ul>
+			<li><a href="#" class="documents">تصميم مواقع</a></li>
+			<li><a href="#" class="messages">تطوير برامج</a></li>
+			<li><a href="#" class="signout">حملات ايميلات</a></li>
+             <li><a href="#" class="signout">حقوق النشر</a></li>
+		</ul></li>     
+</ul>     
+<ul class="OrgMenu" >
+	<li><a href="#" ><i class="fa fa-yelp"></i> المنتجات</a>
+      		<ul>
+			<li><a href="#" class="documents">برامج ايفون</a></li>
+			<li><a href="#" class="messages">برامج ويب</a></li>
+			<li><a href="#" class="signout">برامج غريبة</a></li>
+		</ul></li></ul>
+
+<ul class="GrayMenu" >
+    <li><a href="#"><i class="fa fa-envelope" ></i> اتصل بنا</a>         	
+        <ul>
+			<li><a href="#" class="documents">اتصل بنا</a></li>
+			<li><a href="#" class="messages">إحداثيات</a></li>
+		</ul></li>
+    </ul> 
+</body>
+</html>
